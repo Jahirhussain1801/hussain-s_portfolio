@@ -46,7 +46,7 @@ I am passionate about turning raw data into meaningful insights using modern ana
 ---
 
 ## 📫 Connect with Me
-- 🌐 [LinkedIn](https://www.linkedin.com/in/jahir-hussain)  
+- 🌐 [LinkedIn](https://www.linkedin.com/in/jahir-hussain-h)  
 - 📧 Email: *your email here*  
 
 ---
