@@ -1,57 +1,181 @@
+/* 🌙 Elegant Dark Theme for Portfolio */
 :root {
-  --bg: #0f1724;
-  --card: #0b1220;
-  --muted: #9aa4b2;
-  --accent: #6ee7b7;
-  --glass: rgba(255,255,255,0.03);
+  --bg: #0d1117;
+  --card: #161b22;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --accent-light: #79c0ff;
+  --border: rgba(255, 255, 255, 0.06);
+  --glass: rgba(255, 255, 255, 0.03);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   color-scheme: dark;
 }
-*{box-sizing:border-box}
-body {
+
+/* Reset */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: Inter, system-ui, sans-serif;
-  background: linear-gradient(180deg,#071023 0%, #071620 100%);
-  color: #e6eef6;
-  line-height: 1.6;
+  padding: 0;
 }
+
+/* General Layout */
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: radial-gradient(circle at top, #0d1117 0%, #010409 100%);
+  color: var(--text);
+  line-height: 1.7;
+  padding-bottom: 40px;
+}
+
+/* Header / Navbar */
 header {
-  background: var(--card);
-  padding: 16px;
+  position: sticky;
+  top: 0;
+  background: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(8px);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 14px 28px;
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  z-index: 100;
 }
-header a {
+
+header div {
+  font-size: 1.2rem;
+  font-weight: 700;
   color: var(--accent);
-  text-decoration: none;
-  margin: 0 8px;
-  font-weight: 600;
 }
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--accent-light);
+  transform: translateY(-1px);
+}
+
+/* Container */
 .container {
   max-width: 960px;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
-h1,h2,h3 {margin-top:0}
-.card {
-  background: var(--glass);
-  border: 1px solid rgba(255,255,255,0.05);
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--accent-light);
+  text-align: center;
 }
-footer {
-  text-align:center;
-  color:var(--muted);
-  padding: 20px;
-}
-.btn {
-  display:inline-block;
-  background: var(--glass);
-  border: 1px solid rgba(255,255,255,0.08);
-  padding: 8px 14px;
-  border-radius: 8px;
-  text-decoration:none;
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
   color: var(--accent);
-  font-weight:600;
+  border-left: 4px solid var(--accent);
+  padding-left: 8px;
 }
+
+p {
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+/* Cards */
+.card {
+  background: linear-gradient(180deg, var(--card) 0%, #0d1218 100%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  padding: 24px;
+  margin-bottom: 26px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(88, 166, 255, 0.15);
+}
+
+/* Project Blocks */
+.proj {
+  margin-bottom: 22px;
+}
+
+.proj h3 {
+  color: var(--text);
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.proj p {
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.proj img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.proj img:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #0d1117;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin-top: 4px;
+  transition: background 0.3s ease, transform 0.25s ease;
+}
+
+.btn:hover {
+  background: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 30px;
+  padding: 18px;
+  border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  header {
+    flex-direction: column;
+    gap: 8px;
+  }
+  nav a {
+    display: inline-block;
+    margin: 6px 8px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+
