@@ -1,207 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jahir Hussain — Data Analyst Portfolio</title>
-  <meta name="description" content="Portfolio of Jahir Hussain — Data Visualization, Analytics, Machine Learning" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0f1724;
-      --card:#0b1220;
-      --muted:#9aa4b2;
-      --accent:#6ee7b7;
-      --glass: rgba(255,255,255,0.03);
-      color-scheme: dark;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-      background: linear-gradient(180deg,#071023 0%, #071620 100%);
-      color:#e6eef6;
-      -webkit-font-smoothing:antialiased;
-      line-height:1.5;
-      padding:32px;
-    }
-    .container{max-width:980px;margin:0 auto}
-    header{display:flex;gap:20px;align-items:center;margin-bottom:28px}
-    .avatar{
-      width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);
-      display:flex;align-items:center;justify-content:center;font-weight:700;color:#042027;font-size:28px;
-      box-shadow:0 6px 20px rgba(2,6,23,0.6);
-    }
-    h1{margin:0;font-size:28px}
-    p.lead{margin:4px 0 0;color:var(--muted)}
-    .row{display:grid;grid-template-columns:2fr 1fr;gap:20px}
-    .card{
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:12px;padding:20px;
-      box-shadow: 0 6px 18px rgba(3,8,23,0.6);
-      border: 1px solid rgba(255,255,255,0.03);
-    }
-    nav .contact{display:flex;flex-direction:column;gap:8px}
-    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--muted);font-size:13px}
-    h2{margin:0 0 12px;font-size:18px}
-    ul.clean{list-style:none;padding:0;margin:0}
-    ul.clean li{margin-bottom:10px}
-    .projects{display:grid;gap:12px}
-    .proj{
-      padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
-      border: 1px solid rgba(255,255,255,0.02);
-    }
-    .proj a{color:var(--accent);font-weight:600;text-decoration:none}
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
-    .btn{
-      display:inline-block;padding:10px 14px;border-radius:8px;background:linear-gradient(90deg,#0b1220,#071226);
-      border:1px solid rgba(255,255,255,0.04);text-decoration:none;color:var(--accent);font-weight:600;
-    }
-    @media (max-width:900px){
-      .row{grid-template-columns:1fr}
-      header{flex-direction:row;gap:14px}
-      body{padding:18px}
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jahir Hussain | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- ✅ Navigation -->
+  <header>
+    <div><strong>Jahir Hussain</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ✅ Main Content -->
   <div class="container">
-    <header>
-      <div class="avatar">JH</div>
-      <div>
-        <h1>Jahir Hussain H <span class="tag">Aspiring Data Scientist</span></h1>
-        <p class="lead">Data Visualization • Analytics • Machine Learning — building interpretable solutions and interactive dashboards.</p>
-        <div style="margin-top:10px;display:flex;gap:8px">
-          <a class="btn" href="#projects">View Projects</a>
-          <a class="btn" href="#contact">Contact</a>
-          <a class="btn" href="jahirhussain.pdf" download>Download Resume</a>
-        </div>
-      </div>
-    </header>
+    <h1>Welcome 👋</h1>
+    <p>
+      I’m <strong>Jahir Hussain H</strong> — an aspiring <strong>Data Scientist</strong> and <strong>Data Analyst</strong> passionate about transforming data into meaningful insights through <strong>Visualization, Machine Learning, and AI</strong>.  
+      I enjoy working with real-world datasets to build interpretable, data-driven solutions using Python, Power BI, and Tableau.
+    </p>
 
-    <div class="row">
-      <!-- Main column -->
-      <main class="card">
-        <section id="summary">
-          <h2>Summary</h2>
-          <p>
-            Aspiring Data Scientist with strong foundations in Computer Science and practical experience in
-            Data Visualization and Analytics. Skilled in conceptualizing and implementing end-to-end solutions using
-            Machine Learning, Deep Learning, and Advanced AI. Experience with TensorFlow, scikit-learn, and Keras,
-            and applied techniques in NLP (BERT, RAG), Computer Vision (YOLO), and predictive analytics.
-          </p>
-        </section>
-
-        <section id="experience" style="margin-top:18px;">
-          <h2>Work Experience & Projects</h2>
-
-          <div class="proj">
-            <strong>Multimedia Recommendation System — 2025</strong>
-            <p style="margin:6px 0 0;color:var(--muted)">Built an end-to-end recommendation pipeline — web scraping, TF–IDF vectorization, classical ML models, cross-validation and hyperparameter tuning for interpretable recommender systems.</p>
-          </div>
-
-          <div class="proj" style="margin-top:10px">
-            <strong>Computer Vision: YOLOv7 for Metal Component Detection — 2025</strong>
-            <p style="margin:6px 0 0;color:var(--muted)">Custom object-detection pipeline, dataset augmentation, trained on Colab, tuned hyperparameters to reach high detection accuracy and improved inference speed.</p>
-          </div>
-
-          <div class="proj" style="margin-top:10px">
-            <strong>Smart Home IoT with ML + Power BI — 2023</strong>
-            <p style="margin:6px 0 0;color:var(--muted)">IoT CO₂ monitoring and prediction with Arduino + MQ135, real-time dashboards in Power BI, and regression-based prediction models.</p>
-          </div>
-        </section>
-
-        <section id="projects" style="margin-top:18px;">
-          <h2>Selected Dashboards & Repos</h2>
-          <div class="projects">
-            <div class="proj">
-              <strong>Power BI — Financial Insights</strong>
-              <div style="margin-top:6px;color:var(--muted)">
-                Created KPIs for profit margin, revenue growth, and customer segmentation.  
-                <div style="margin-top:8px"><a href="https://github.com/Jahirhussain1801/PowerBI-Financial-Insights" target="_blank">github.com/Jahirhussain1801/PowerBI-Financial-Insights</a></div>
-              </div>
-            </div>
-
-            <div class="proj">
-              <strong>Tableau — Customer Sales Dashboard</strong>
-              <div style="margin-top:6px;color:var(--muted)">
-                Regional sales, categories, and revenue trends.  
-                <div style="margin-top:8px"><a href="https://github.com/Jahirhussain1801/Tableau-Sales-Dashboard" target="_blank">github.com/Jahirhussain1801/Tableau-Sales-Dashboard</a></div>
-              </div>
-            </div>
-
-            <div class="proj">
-              <strong>Tableau — Ecommerce Insights Dashboard</strong>
-              <div style="margin-top:6px;color:var(--muted)">
-                Interactive charts to uncover purchase behavior and marketing optimization.  
-                <div style="margin-top:8px"><a href="https://github.com/Jahirhussain1801/Tableau-Ecommerce-Insights" target="_blank">github.com/Jahirhussain1801/Tableau-Ecommerce-Insights</a></div>
-              </div>
-            </div>
-
-            <div class="proj">
-              <strong>Simulations: Accenture / Tata</strong>
-              <div style="margin-top:6px;color:var(--muted)">
-                Data cleaning, storytelling, and client-ready visual reports.  
-                <div style="margin-top:8px"><a href="https://github.com/Jahirhussain1801/Accenture-Simulation" target="_blank">Accenture-Simulation</a> · <a href="https://github.com/Jahirhussain1801/Tata-Visualization-Simulation" target="_blank">Tata-Visualization-Simulation</a></div>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        <section id="education" style="margin-top:18px;">
-          <h2>Education & Achievements</h2>
-          <ul class="clean" style="margin-top:8px">
-            <li><strong>B.Tech — Computer Science</strong>, Kalasalingam Academy of Research and Education (2021 – 2025)</li>
-            <li style="color:var(--muted);margin-top:6px"><strong>IIT Bombay TechFest</strong> — Finalist (Dec 2022) · <strong>IISc Bangalore</strong> — ML Workshop (Sep 2024)</li>
-          </ul>
-        </section>
-      </main>
-
-      <!-- Side column -->
-      <aside class="card">
-        <section id="contact">
-          <h2>Contact</h2>
-          <div class="contact">
-            <div><strong>Email</strong><br><a href="mailto:jahirhussain180102@gmail.com">jahirhussain180102@gmail.com</a></div>
-            <div style="margin-top:8px"><strong>Phone</strong><br><a href="tel:+919363366530">+91 9363366530</a></div>
-            <div style="margin-top:8px"><strong>Location</strong><br>Madurai, India</div>
-            <div style="margin-top:8px"><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/jahir-hussain">linkedin.com/in/jahir-hussain</a></div>
-          </div>
-        </section>
-
-        <section style="margin-top:16px;">
-          <h2>Skills</h2>
-          <div class="skills">
-            <span class="tag">Python</span>
-            <span class="tag">Pandas</span>
-            <span class="tag">NumPy</span>
-            <span class="tag">Power BI</span>
-            <span class="tag">Tableau</span>
-            <span class="tag">SQL / MySQL</span>
-            <span class="tag">DAX</span>
-            <span class="tag">TensorFlow</span>
-            <span class="tag">YOLO</span>
-            <span class="tag">NLP (BERT, RAG)</span>
-          </div>
-        </section>
-
-        <section style="margin-top:16px;">
-          <h2>Quick Links</h2>
-          <ul class="clean" style="margin-top:8px">
-            <li><a href="https://github.com/Jahirhussain1801" target="_blank">GitHub / Jahirhussain1801</a></li>
-            <li style="margin-top:6px"><a href="https://github.com/Jahirhussain1801/PowerBI-Financial-Insights" target="_blank">Power BI — Financial Insights</a></li>
-            <li style="margin-top:6px"><a href="https://github.com/Jahirhussain1801/Tableau-Sales-Dashboard" target="_blank">Tableau — Sales Dashboard</a></li>
-          </ul>
-        </section>
-      </aside>
+    <div style="margin: 16px 0;">
+      <a class="btn" href="jahirhussain.pdf" download>📄 Download Resume</a>
+      <a class="btn" href="projects.html">🚀 View All Projects</a>
     </div>
 
-    <footer>
-      <div>Last updated: September 29, 2025</div>
-      <div style="margin-top:6px;color:var(--muted)">Content based on resume document provided. :contentReference[oaicite:1]{index=1}</div>
-    </footer>
+    <!-- ✅ Featured Projects Section -->
+    <div class="card">
+      <h2>🌟 Featured Projects</h2>
+
+      <div class="proj">
+        <h3><a href="https://github.com/Jahirhussain1801/PowerBI-Financial-Insights" target="_blank">Power BI — Financial Insights</a></h3>
+        <p>Developed an interactive dashboard visualizing profit margins, customer segmentation, and revenue growth trends to support business decisions.</p>
+      </div>
+
+      <div class="proj">
+        <h3><a href="https://github.com/Jahirhussain1801/Tableau-Sales-Dashboard" target="_blank">Tableau — Customer Sales Dashboard</a></h3>
+        <p>Created region-based and category-based sales visualizations to identify high-performing areas and product categories.</p>
+      </div>
+
+      <div class="proj">
+        <h3><a href="https://github.com/Jahirhussain1801/Accenture-Simulation" target="_blank">Accenture Data Analytics Simulation</a></h3>
+        <p>Performed end-to-end data cleaning, modeling, and storytelling for business insights as part of Accenture’s virtual internship program.</p>
+      </div>
+
+      <div class="proj">
+        <h3><a href="https://github.com/Jahirhussain1801/Tata-Visualization-Simulation" target="_blank">Tata Visualization Simulation</a></h3>
+        <p>Built insightful dashboards using data storytelling principles to visualize company growth and KPIs for strategic reporting.</p>
+      </div>
+    </div>
+
+    <!-- ✅ Extra Section -->
+    <div class="card">
+      <h2>🧠 Technical Skills</h2>
+      <p><strong>Languages:</strong> Python, SQL</p>
+      <p><strong>Visualization Tools:</strong> Power BI, Tableau, Excel</p>
+      <p><strong>Machine Learning:</strong> scikit-learn, TensorFlow, NLP, Computer Vision</p>
+      <p><strong>Core Areas:</strong> Data Modeling, KPI Design, Storytelling with Data, Business Insights</p>
+    </div>
   </div>
+
+  <!-- ✅ Footer -->
+  <footer>
+    © 2025 Jahir Hussain • Built with ❤️ using HTML + CSS  
+  </footer>
 </body>
 </html>
